@@ -2,6 +2,7 @@ import About from "./components/About";
 import Explore from "./components/Explore";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <About />
       <Explore />
+      <Search />
     </>
   );
 }
