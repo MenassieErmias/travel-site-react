@@ -13,10 +13,10 @@ const Navbar = () => {
     }
 
     return (
-        <div className="fixed top-0 left-0 text-gray-300 w-full p-4 bg-black">
+        <div className="fixed top-0 left-0 text-gray-300 w-full p-4 bg-[#1d2022]">
             <div className="max-w-[1000px] flex justify-between items-center w-full h-[42px] mx-auto">
                 <a href='/'>
-                    <img className='h-full w-[70px]' src={Logo} alt="logo" />
+                    <img className='h-full w-[50px]' src={Logo} alt="logo" />
                 </a>
                 <ul className="hidden md:flex justify-around w-[500px]">
                     <li>Home</li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <ul className={nav ? 'bg-black w-full h-screen flex flex-col justify-around items-center p-8' : "hidden"}>
+            <ul className={nav ? 'bg-[#1d2022] w-full h-screen flex flex-col justify-around items-center p-8' : "hidden"}>
                 <li className='text-2xl'>Home</li>
                 <li className='text-2xl'>About</li>
                 <li className='text-2xl'>Explore</li>

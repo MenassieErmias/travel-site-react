@@ -1,5 +1,4 @@
 
-
 const About = () => {
     return (
         <div name='about' className="w-full h-max bg-gray-300 p-4">
