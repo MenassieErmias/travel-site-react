@@ -1,7 +1,7 @@
 
 const Search = () => {
     return (
-        <div className="bg-gray-300 w-full h-max p-4">
+        <div name='search' className="bg-gray-300 w-full h-max p-4">
             <div className="max-w-[1000px] mx-auto">
                 <div className="text-center">
                     <span className="border-b-2 border-pink-600 text-4xl">Search</span>

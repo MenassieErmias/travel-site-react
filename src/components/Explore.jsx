@@ -3,7 +3,7 @@ import img2 from '../assets/people-2591874_1920.jpg';
 import img3 from '../assets/beach-1236581_1920.jpg';
 const Explore = () => {
     return (
-        <div className="bg-[#1d2022] w-full h-max p-4 text-gray-300">
+        <div name='explore' className="bg-[#1d2022] w-full h-max p-4 text-gray-300">
             <div className="w-full h-full max-w-[1000px] mx-auto">
                 <div className="text-center">
                     <span className="text-4xl border-b-2 border-pink-600">Explore</span>

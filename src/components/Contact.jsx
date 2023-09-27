@@ -2,7 +2,7 @@
 
 const Contact = () => {
     return (
-        <div className='bg-[#1d2022] w-full h-max p-4 text-gray-300'>
+        <div name='contact' className='bg-[#1d2022] w-full h-max p-4 text-gray-300'>
             <div className='max-w-[1000px] mx-auto'>
                 <div className="text-center">
                     <span className="text-4xl border-b-2 border-pink-600">Contact</span>
