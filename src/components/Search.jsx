@@ -1,5 +1,4 @@
 
-
 const Search = () => {
     return (
         <div className="bg-gray-300 w-full h-max p-4">

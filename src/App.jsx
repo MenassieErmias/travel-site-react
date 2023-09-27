@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Explore from "./components/Explore";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Explore />
       <Search />
+      <Contact />
     </>
   );
 }
