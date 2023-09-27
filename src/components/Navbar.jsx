@@ -1,20 +1,47 @@
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.png';
+
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+
+import { useState } from 'react';
 
 const Navbar = () => {
+
+    const [nav, setNav] = useState(false);
+
+    const handleClick = () => {
+        setNav(prev => !prev);
+    }
+
     return (
-        <div className="text-gray-300 w-full p-4 flex items-center justify-center bg-black h-[70px]">
-            <div className="max-w-[1000px] flex justify-between items-center w-full">
+        <div className="text-gray-300 w-full p-4 bg-black">
+            <div className="max-w-[1000px] flex justify-between items-center w-full h-[42px] mx-auto">
                 <a href='/'>
                     <img className='h-full w-[70px]' src={Logo} alt="logo" />
                 </a>
-                <ul className="flex justify-around w-[500px]">
+                <ul className="hidden md:flex justify-around w-[500px]">
                     <li>Home</li>
                     <li>About</li>
                     <li>Explore</li>
                     <li>Search</li>
                     <li>Contact</li>
                 </ul>
+                <div className='md:hidden'>
+                    {
+                        nav ? <AiOutlineClose size={30} onClick={handleClick} /> :
+                            <AiOutlineMenu size={30} onClick={handleClick} />
+                    }
+                </div>
             </div>
+
+            <ul className={nav ? 'bg-black w-full h-screen flex flex-col justify-around items-center p-8' : "hidden"}>
+                <li className='text-2xl'>Home</li>
+                <li className='text-2xl'>About</li>
+                <li className='text-2xl'>Explore</li>
+                <li className='text-2xl'>Search</li>
+                <li className='text-2xl'>Contact</li>
+            </ul>
+
+
         </div>
     )
 }
